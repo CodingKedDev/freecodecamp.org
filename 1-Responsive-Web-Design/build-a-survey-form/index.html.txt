@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale="1.0">
+<head>
+  <link rel="stylesheet" href="styles.css">
+<title>Build a Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Discover the latest trends and techniques in frontend development. Enhance your skills with expert tutorials, resources, and community support for developers.</p>
+  <form id="survey-form">
+    <label for="name-label" id="name-label">Name
+    <input id="name" type="text" placeholder="enter your name" name="name" required>
+    </label>
+    <label for="email-label" id="email-label">Email
+    <input id="email" type="email" 
+pattern="[^ @]*@[^ @]*" placeholder="enter your email" name="email" required>
+     </label>
+     <label for="number-label" id="number-label">Age
+       <input id="number" type="number" name="number" min="8" max="14" placeholder="Age">
+     </label>
+     <p>What is your favorite</p>
+    <select id="dropdown">
+      <option value="">select an option</option>
+      <option value="one">select one</option>
+      <option value="two">select two</option>
+    </select>
+    <p>Please select your favorite Web language:</p>
+    <label>HTML<input type="radio" name="radio" checked value="html"></label>
+    <label>CSS<input type="radio" name="radio" value="css"></label>
+    <label>Javascript<input type="radio" name="radio" value="javascript"></label>
+     <p>What is your favorite feature?</p>
+    <label>Frontend-project<input type="checkbox" value="fronend"></label>
+    <label>Backend-project<input type="checkbox" value="backend"></label>
+    <label>Fullstack-project<input type="checkbox" value="fullstack"></label>
+
+ <p>Any comments or suggestions?</p>
+ <textarea type="text" rows="3" cols="10"></textarea>
+    <input type="submit" id="submit">
+  </form>
+</body>
+</html> 

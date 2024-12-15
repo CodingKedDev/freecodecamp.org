@@ -61,3 +61,4 @@ function cleanText(text) {
 
     return text.replaceAll(/[^a-zA-Z0-9]/g, "");
 }
+
